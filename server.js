@@ -64,12 +64,14 @@ app.post('/call-payment-provider', function(req, res) {
   console.log('request:', req.body)
 
   let paymentData = req.body.paymentData;
+
+  /* Make an order with the Cielo's API */
   var options = {
     method: 'POST',
     url: 'https://api.cieloecommerce.cielo.com.br/1/sales',
     headers: { 
-      merchantkey: 'uFqxlaPBMdP79vd1ljt4HK8Fi9bb9ddmWTPrK8RF',
-      merchantid: '261c4632-69d9-4bff-a4ac-f5fc0155c925',
+      merchantkey: 'cielo_merchant_key_hash',
+      merchantid: 'cielo_merchant_id_hash',
       'content-type': 'application/json'
     },
     body: { 
@@ -97,7 +99,6 @@ app.post('/call-payment-provider', function(req, res) {
 
   request(options, function (error, response, body) {
     if (error) throw new Error(error);
-    console.log('req2 ####################: ', body);
     res.send(body);
   });
 });
