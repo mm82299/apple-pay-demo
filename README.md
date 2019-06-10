@@ -2,7 +2,7 @@
 
 This is a basic application that we used to test the Apple Pay production environment.
 
-After studying documentations and seeing some github projects, we discovered that it was not so easy, so we chose to share this repository and thus help other developers.
+After studying documentations and seeing some github projects, we discovered that it was not so easy, so we choose to share this repository and thus help other developers.
 
 We use [CIELO](https://developercielo.github.io/manual/cielo-ecommerce#apple-pay) as payment provider, a brazilian payment company.
 
@@ -21,7 +21,7 @@ Click twice at the certificate file to install then in your Keychain locally.
 
 ## The Apple Pay Merchant Certificate
 
-DON'T USE THE APPLE DOCS to create this certificate. In ther documentation, they create a basic certificate without a private key. WE NEED a private key for this in production.
+DON'T USE THE APPLE DOCS to create this certificate. In ther documentation, they create a basic certificate without a private key. WE NEED a private key for the production environment.
 
 Apple docs: https://help.apple.com/developer-account/#/devbfa00fef7
 
@@ -45,7 +45,7 @@ You only'll need the `.PEM` certificate in your server.
 
 ## The Merchant Domain
 
-To test localy, you need a HTTPS host, so the best way is using the [ngrok](https://ngrok.com/) app. Install _ngrok_ app and run in a new terminal tab:
+To test locally, you need a HTTPS host, so the best way is using the [ngrok](https://ngrok.com/) app. Install _ngrok_ app and run in a new terminal tab:
 
 ```
 ./ngrok http 3000
