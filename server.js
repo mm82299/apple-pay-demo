@@ -1,16 +1,3 @@
-/* Referente:
-  https://github.com/tomdale/apple-pay-merchant-session-server
-  https://github.com/norfolkmustard/ApplePayJS
-  https://developer.apple.com/videos/play/wwdc2016/703/
-  https://applepaydemo.apple.com/
-
-  README:
-
-  To run local: npm start
-  Node version: 8.9.1
-
-*/
-
 var request = require('request');
 var express = require('express');
 var bodyParser = require('body-parser');
