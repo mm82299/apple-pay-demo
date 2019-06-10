@@ -52,7 +52,9 @@ app.post('/call-payment-provider', function(req, res) {
 
   let paymentData = req.body.paymentData;
 
-  /* Make an order with the Cielo's API */
+  /* Make an order with the Cielo's API. 
+     Here you'll use your Payment provider API to charge an order.
+  */
   var options = {
     method: 'POST',
     url: 'https://api.cieloecommerce.cielo.com.br/1/sales',
