@@ -1,0 +1,1 @@
+The Apple Pay domain validator file goes here.
